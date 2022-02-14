@@ -4,11 +4,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { ContentProyectionComponent } from './content-proyection/content-proyection.component';
 import { ContentChildComponent } from './content-child/content-child.component';
 
-const routes: Routes = [ 
+const routes: Routes = [
 
-  { path: 'content-proyection', component: ContentProyectionComponent },
-  { path: 'content-child', component: ContentChildComponent },
-
+  {
+    path: 'content-proyection', component: ContentProyectionComponent,
+    data: {
+      title: 'Conten Proyection'
+    }
+  },
+  {
+    path: 'content-child', component: ContentChildComponent,
+    data: {
+      title: 'Content Child'
+    }
+  },
 
 ]
 
