@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { ContentProyectionComponent } from './content-proyection/content-proyection.component';
 import { ContentChildComponent } from './content-child/content-child.component';
+import { DynamicFormComponent } from './dynamic-forms/dynamic-form/dynamic-form.component';
+import { DynamicFormsComponent } from './dynamic-forms/dynamic-forms.component';
 
 const routes: Routes = [
 
@@ -18,6 +20,9 @@ const routes: Routes = [
       title: 'Content Child'
     }
   },
+  {
+    path: 'dynamic-form', component: DynamicFormsComponent
+  }
 
 ]
 
