@@ -6,6 +6,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsRoutingModule } from './components/components-routing.module';
 import { ComponentsModule } from './components/components.module';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { MonitorInterceptor } from './services/monitor/monitor.interceptor';
 
 
 @NgModule({
@@ -19,7 +21,13 @@ import { ComponentsModule } from './components/components.module';
     ComponentsModule,
     ComponentsRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: MonitorInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
