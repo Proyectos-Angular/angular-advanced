@@ -5,6 +5,7 @@ import { ContentProyectionComponent } from './content-proyection/content-proyect
 import { ContentChildComponent } from './content-child/content-child.component';
 import { DynamicFormComponent } from './dynamic-forms/dynamic-form/dynamic-form.component';
 import { DynamicFormsComponent } from './dynamic-forms/dynamic-forms.component';
+import { SharedOperatorComponent } from './shared-operator/shared-operator.component';
 
 const routes: Routes = [
 
@@ -22,6 +23,9 @@ const routes: Routes = [
   },
   {
     path: 'dynamic-form', component: DynamicFormsComponent
+  },
+  {
+    path: 'shared', component: SharedOperatorComponent
   }
 
 ]

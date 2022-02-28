@@ -10,6 +10,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DynamicFormsComponent } from './dynamic-forms/dynamic-forms.component';
 import { DynamicFormInputComponent } from './dynamic-forms/dynamic-form-input/dynamic-form-input.component';
 import { DynamicFormComponent } from './dynamic-forms/dynamic-form/dynamic-form.component';
+import { SharedOperatorComponent } from './shared-operator/shared-operator.component';
+import { TableComponent } from './shared-operator/table/table.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { DynamicFormComponent } from './dynamic-forms/dynamic-form/dynamic-form.
     ContentChildComponent,
     DynamicFormInputComponent,
     DynamicFormComponent,
-    DynamicFormsComponent
+    DynamicFormsComponent,
+    SharedOperatorComponent,
+    TableComponent
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class ComponentsModule { }
