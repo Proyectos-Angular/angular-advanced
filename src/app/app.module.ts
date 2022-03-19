@@ -8,6 +8,7 @@ import { ComponentsRoutingModule } from './components/components-routing.module'
 import { ComponentsModule } from './components/components.module';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MonitorInterceptor } from './services/monitor/monitor.interceptor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MonitorInterceptor } from './services/monitor/monitor.interceptor';
     BrowserModule,
     AppRoutingModule,
     ComponentsModule,
-    ComponentsRoutingModule
+    ComponentsRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {

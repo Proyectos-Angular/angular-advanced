@@ -6,6 +6,7 @@ import { ContentChildComponent } from './content-child/content-child.component';
 import { DynamicFormComponent } from './dynamic-forms/dynamic-form/dynamic-form.component';
 import { DynamicFormsComponent } from './dynamic-forms/dynamic-forms.component';
 import { SharedOperatorComponent } from './shared-operator/shared-operator.component';
+import { Gridster2Component } from './gridster2/gridster2.component';
 
 const routes: Routes = [
 
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'shared', component: SharedOperatorComponent
+  },
+  {
+    path: 'gridster2', component: Gridster2Component
   }
 
 ]

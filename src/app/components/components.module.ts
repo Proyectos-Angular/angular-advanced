@@ -13,6 +13,10 @@ import { DynamicFormComponent } from './dynamic-forms/dynamic-form/dynamic-form.
 import { SharedOperatorComponent } from './shared-operator/shared-operator.component';
 import { TableComponent } from './shared-operator/table/table.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Gridster2Component } from './gridster2/gridster2.component';
+
+import { GridsterModule } from 'angular-gridster2';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -24,13 +28,16 @@ import { HttpClientModule } from '@angular/common/http';
     DynamicFormComponent,
     DynamicFormsComponent,
     SharedOperatorComponent,
-    TableComponent
+    TableComponent,
+    Gridster2Component
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GridsterModule,
+    MatIconModule
   ]
 })
 export class ComponentsModule { }
